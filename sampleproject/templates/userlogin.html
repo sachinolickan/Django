@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="." enctype="multipart/form-data">
+    {% csrf_token %}
+    First name:{{form1.first_name}}</br>
+    Last Name:{{form1.first_name}}</br>
+    Username:{{form1.username}}</br>
+    Password:{{form1.password1}}</br>
+    Confirm Password:{{form1.password2}}</br>
+    profile Pic:{{form2.profile_pic}}</br>
+    Address:{{form2.address}}</br>
+    Place:{{form2.place}}</br>
+    Phone:{{form2.phone}}</br>
+    <button>Register</button>
+
+</form>
+
+</body>
+</html>
